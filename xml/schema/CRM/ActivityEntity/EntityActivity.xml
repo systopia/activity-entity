@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<table>
+  <base>CRM/ActivityEntity</base>
+  <class>EntityActivity</class>
+  <name>civicrm_entity_activity</name>
+  <comment>Connect activities to other entities</comment>
+  <log>true</log>
+
+  <field>
+    <name>id</name>
+    <type>int unsigned</type>
+    <required>true</required>
+    <title>Activity Entity ID</title>
+    <comment>Unique ActivityEntity ID</comment>
+    <html>
+      <type>Number</type>
+    </html>
+  </field>
+  <primaryKey>
+    <name>id</name>
+    <autoincrement>true</autoincrement>
+  </primaryKey>
+
+  <field>
+    <name>activity_id</name>
+    <type>int unsigned</type>
+    <title>Activity ID</title>
+    <comment>FK to Activity</comment>
+    <html>
+      <type>EntityRef</type>
+      <label>Activity</label>
+    </html>
+  </field>
+  <foreignKey>
+    <name>activity_id</name>
+    <table>civicrm_activity</table>
+    <key>id</key>
+    <onDelete>CASCADE</onDelete>
+  </foreignKey>
+
+  <field>
+    <name>entity_table</name>
+    <type>varchar</type>
+    <title>Entity Table</title>
+    <length>64</length>
+    <comment>Physical table name for entity being joined</comment>
+    <pseudoconstant>
+      <optionGroupName>activity_used_for</optionGroupName>
+    </pseudoconstant>
+    <html>
+      <type>Text</type>
+      <label>Entity table</label>
+    </html>
+  </field>
+
+  <field>
+    <name>entity_id</name>
+    <type>int unsigned</type>
+    <title>Entity ID</title>
+    <required>true</required>
+    <comment>FK to entity table specified in entity_table column.</comment>
+    <html>
+      <type>Number</type>
+      <label>Entity ID</label>
+    </html>
+  </field>
+  <dynamicForeignKey>
+    <idColumn>entity_id</idColumn>
+    <typeColumn>entity_table</typeColumn>
+  </dynamicForeignKey>
+
+  <field>
+    <name>record_type_id</name>
+    <type>int unsigned</type>
+    <title>Connection Type</title>
+    <required>false</required>
+    <comment>Determines the type of connection</comment>
+    <pseudoconstant>
+      <optionGroupName>activity_entity_connection_type</optionGroupName>
+    </pseudoconstant>
+    <html>
+      <type>Select</type>
+      <label>Connection type</label>
+    </html>
+  </field>
+
+  <index>
+    <name>UI_activity_entity</name>
+    <fieldName>activity_id</fieldName>
+    <fieldName>entity_table</fieldName>
+    <fieldName>entity_id</fieldName>
+    <fieldName>record_type_id</fieldName>
+    <unique>true</unique>
+  </index>
+  <index>
+    <name>index_record_type</name>
+    <fieldName>activity_id</fieldName>
+    <fieldName>record_type_id</fieldName>
+  </index>
+
+</table>

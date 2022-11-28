@@ -1,0 +1,157 @@
+[
+    {
+        "location": "Symfony\\Component\\ErrorHandler\\DebugClassLoader::loadClass",
+        "message": "The \"Civi\\Test\\CiviTestListenerPHPUnit7\" class implements \"PHPUnit\\Framework\\TestListener\" that is deprecated.",
+        "count": 2
+    },
+    {
+        "location": "Symfony\\Component\\ErrorHandler\\DebugClassLoader::loadClass",
+        "message": "The \"Civi\\Test\\CiviTestListenerPHPUnit7\" class uses \"PHPUnit\\Framework\\TestListenerDefaultImplementation\" that is deprecated The `TestListener` interface is deprecated.",
+        "count": 2
+    },
+    {
+        "location": "Civi\\Test\\CiviTestListenerPHPUnit7::startTestSuite",
+        "message": "The \"Civi\\Core\\Event\\GenericHookEvent\" class extends \"Symfony\\Component\\EventDispatcher\\Event\" that is deprecated since Symfony 4.3, use \"Symfony\\Contracts\\EventDispatcher\\Event\" instead.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Test\\CiviTestListenerPHPUnit7::startTestSuite",
+        "message": "Calling the \"Symfony\\Component\\EventDispatcher\\EventDispatcherInterface::dispatch()\" method with the event name as the first argument is deprecated since Symfony 4.3, pass it as the second argument and provide the event object as the first argument instead.",
+        "count": 9
+    },
+    {
+        "location": "Civi\\Test\\CiviTestListenerPHPUnit7::startTestSuite",
+        "message": "The \"CRM_Batch_BAO_Batch::links()\" method will require a new \"array $new_links\" argument in the next major version of its parent class \"DB_DataObject\", not defining it is deprecated.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Test\\CiviTestListenerPHPUnit7::startTestSuite",
+        "message": "The \"CRM_Activity_BAO_ActivityContact::links()\" method will require a new \"array $new_links\" argument in the next major version of its parent class \"DB_DataObject\", not defining it is deprecated.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Test\\CiviTestListenerPHPUnit7::startTestSuite",
+        "message": "The \"Civi\\API\\Event\\Event\" class extends \"Symfony\\Component\\EventDispatcher\\Event\" that is deprecated since Symfony 4.3, use \"Symfony\\Contracts\\EventDispatcher\\Event\" instead.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Test\\CiviTestListenerPHPUnit7::startTestSuite",
+        "message": "The \"Civi\\ActionSchedule\\Event\\MailingQueryEvent\" class extends \"Symfony\\Component\\EventDispatcher\\Event\" that is deprecated since Symfony 4.3, use \"Symfony\\Contracts\\EventDispatcher\\Event\" instead.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Test\\CiviTestListenerPHPUnit7::startTestSuite",
+        "message": "The \"Civi\\ActionSchedule\\Event\\MappingRegisterEvent\" class extends \"Symfony\\Component\\EventDispatcher\\Event\" that is deprecated since Symfony 4.3, use \"Symfony\\Contracts\\EventDispatcher\\Event\" instead.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Test\\CiviTestListenerPHPUnit7::startTestSuite",
+        "message": "The \"Civi\\Api4\\Event\\PostSelectQueryEvent\" class extends \"Symfony\\Component\\EventDispatcher\\Event\" that is deprecated since Symfony 4.3, use \"Symfony\\Contracts\\EventDispatcher\\Event\" instead.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Test\\CiviTestListenerPHPUnit7::startTestSuite",
+        "message": "The \"Civi\\Api4\\Event\\SchemaMapBuildEvent\" class extends \"Symfony\\Component\\EventDispatcher\\Event\" that is deprecated since Symfony 4.3, use \"Symfony\\Contracts\\EventDispatcher\\Event\" instead.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Test\\CiviTestListenerPHPUnit7::startTestSuite",
+        "message": "The \"Civi\\Core\\Event\\QueryEvent\" class extends \"Symfony\\Component\\EventDispatcher\\Event\" that is deprecated since Symfony 4.3, use \"Symfony\\Contracts\\EventDispatcher\\Event\" instead.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Test\\CiviTestListenerPHPUnit7::startTestSuite",
+        "message": "The \"Civi\\Core\\Event\\SmartyErrorEvent\" class extends \"Symfony\\Component\\EventDispatcher\\Event\" that is deprecated since Symfony 4.3, use \"Symfony\\Contracts\\EventDispatcher\\Event\" instead.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Test\\CiviTestListenerPHPUnit7::startTestSuite",
+        "message": "The \"Civi\\Core\\Event\\SystemInstallEvent\" class extends \"Symfony\\Component\\EventDispatcher\\Event\" that is deprecated since Symfony 4.3, use \"Symfony\\Contracts\\EventDispatcher\\Event\" instead.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Test\\CiviTestListenerPHPUnit7::startTestSuite",
+        "message": "The \"Civi\\Token\\Event\\TokenEvent\" class extends \"Symfony\\Component\\EventDispatcher\\Event\" that is deprecated since Symfony 4.3, use \"Symfony\\Contracts\\EventDispatcher\\Event\" instead.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Test\\CiviTestListenerPHPUnit7::startTestSuite",
+        "message": "The \"Civi\\Core\\DAO\\Event\\PostDelete\" class extends \"Symfony\\Component\\EventDispatcher\\Event\" that is deprecated since Symfony 4.3, use \"Symfony\\Contracts\\EventDispatcher\\Event\" instead.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Test\\CiviTestListenerPHPUnit7::startTestSuite",
+        "message": "The \"Civi\\Core\\DAO\\Event\\PostUpdate\" class extends \"Symfony\\Component\\EventDispatcher\\Event\" that is deprecated since Symfony 4.3, use \"Symfony\\Contracts\\EventDispatcher\\Event\" instead.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Test\\CiviTestListenerPHPUnit7::startTestSuite",
+        "message": "The \"Civi\\Core\\DAO\\Event\\PreDelete\" class extends \"Symfony\\Component\\EventDispatcher\\Event\" that is deprecated since Symfony 4.3, use \"Symfony\\Contracts\\EventDispatcher\\Event\" instead.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Test\\CiviTestListenerPHPUnit7::startTestSuite",
+        "message": "The \"Civi\\Core\\DAO\\Event\\PreUpdate\" class extends \"Symfony\\Component\\EventDispatcher\\Event\" that is deprecated since Symfony 4.3, use \"Symfony\\Contracts\\EventDispatcher\\Event\" instead.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Test\\CiviTestListenerPHPUnit7::startTest",
+        "message": "Calling the \"Symfony\\Component\\EventDispatcher\\EventDispatcherInterface::dispatch()\" method with the event name as the first argument is deprecated since Symfony 4.3, pass it as the second argument and provide the event object as the first argument instead.",
+        "count": 216
+    },
+    {
+        "location": "CRM_ActivityEntity_BAO_EntityActivityTest::setUp",
+        "message": "Calling the \"Symfony\\Component\\EventDispatcher\\EventDispatcherInterface::dispatch()\" method with the event name as the first argument is deprecated since Symfony 4.3, pass it as the second argument and provide the event object as the first argument instead.",
+        "count": 78
+    },
+    {
+        "location": "CRM_ActivityEntity_BAO_EntityActivityTest::testCascadeEntityDeletion",
+        "message": "Calling the \"Symfony\\Component\\EventDispatcher\\EventDispatcherInterface::dispatch()\" method with the event name as the first argument is deprecated since Symfony 4.3, pass it as the second argument and provide the event object as the first argument instead.",
+        "count": 410
+    },
+    {
+        "location": "CRM_ActivityEntity_BAO_EntityActivityTest::testCascadeEntityDeletion",
+        "message": "The \"Drupal\\Component\\EventDispatcher\\Event\" class extends \"Symfony\\Component\\EventDispatcher\\Event\" that is deprecated since Symfony 4.3, use \"Symfony\\Contracts\\EventDispatcher\\Event\" instead.",
+        "count": 1
+    },
+    {
+        "location": "CRM_ActivityEntity_BAO_EntityActivityTest::testCascadeEntityDeletion",
+        "message": "The \"Civi\\Test\\CiviTestListenerPHPUnit7\" class implements \"PHPUnit\\Framework\\TestListener\" that is deprecated.",
+        "count": 1
+    },
+    {
+        "location": "CRM_ActivityEntity_BAO_EntityActivityTest::testCascadeEntityDeletion",
+        "message": "The \"Civi\\Test\\CiviTestListenerPHPUnit7\" class uses \"PHPUnit\\Framework\\TestListenerDefaultImplementation\" that is deprecated The `TestListener` interface is deprecated.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Api4\\EntityActivityTest::setUp",
+        "message": "Calling the \"Symfony\\Component\\EventDispatcher\\EventDispatcherInterface::dispatch()\" method with the event name as the first argument is deprecated since Symfony 4.3, pass it as the second argument and provide the event object as the first argument instead.",
+        "count": 385
+    },
+    {
+        "location": "Civi\\Api4\\EntityActivityTest::testConnectAndDisconnect",
+        "message": "Calling the \"Symfony\\Component\\EventDispatcher\\EventDispatcherInterface::dispatch()\" method with the event name as the first argument is deprecated since Symfony 4.3, pass it as the second argument and provide the event object as the first argument instead.",
+        "count": 406
+    },
+    {
+        "location": "Civi\\Api4\\EntityActivityTest::testConnectAndDisconnectWithRecordTypeId",
+        "message": "Calling the \"Symfony\\Component\\EventDispatcher\\EventDispatcherInterface::dispatch()\" method with the event name as the first argument is deprecated since Symfony 4.3, pass it as the second argument and provide the event object as the first argument instead.",
+        "count": 537
+    },
+    {
+        "location": "Civi\\Api4\\EntityActivityTest::testConnectAndDisconnectWithRecordTypeName",
+        "message": "Calling the \"Symfony\\Component\\EventDispatcher\\EventDispatcherInterface::dispatch()\" method with the event name as the first argument is deprecated since Symfony 4.3, pass it as the second argument and provide the event object as the first argument instead.",
+        "count": 471
+    },
+    {
+        "location": "Civi\\Api4\\EntityActivityTest::testDisconnectActivity",
+        "message": "Calling the \"Symfony\\Component\\EventDispatcher\\EventDispatcherInterface::dispatch()\" method with the event name as the first argument is deprecated since Symfony 4.3, pass it as the second argument and provide the event object as the first argument instead.",
+        "count": 394
+    },
+    {
+        "location": "Civi\\Api4\\EntityActivityTest::testDisconnectEntity",
+        "message": "Calling the \"Symfony\\Component\\EventDispatcher\\EventDispatcherInterface::dispatch()\" method with the event name as the first argument is deprecated since Symfony 4.3, pass it as the second argument and provide the event object as the first argument instead.",
+        "count": 420
+    }
+]

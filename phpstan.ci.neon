@@ -1,0 +1,7 @@
+includes:
+	- phpstan.neon.dist
+
+parameters:
+	ignoreErrors:
+		# Errors we get when using "prefer-lowest"
+		- '#::getSubscribedEvents\(\) return type has no value type specified in iterable type array.$#'
