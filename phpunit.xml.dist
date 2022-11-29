@@ -23,7 +23,7 @@
       <directory suffix=".php">Civi</directory>
       <exclude>
         <directory>CRM/*/DAO</directory>
-        <file>CRM/*/Upgrader/Base.php</file>
+        <directory suffix="Base.php">CRM/*/Upgrader</directory>
       </exclude>
     </whitelist>
   </filter>

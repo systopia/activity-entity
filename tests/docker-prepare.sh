@@ -19,7 +19,9 @@ done
 echo
 
 export XDEBUG_MODE=off
-cv flush >/dev/null 2>/dev/null || {
+if mysql -h "$CIVICRM_DB_HOST" -P "$CIVICRM_DB_PORT" -u "$CIVICRM_DB_USER" --password="$CIVICRM_DB_PASS" "$CIVICRM_DB_NAME" -e 'SELECT 1 FROM civicrm_setting LIMIT 1;' >/dev/null 2>&1; then
+  cv flush
+else
   # For headless tests it is required that CIVICRM_UF is defined using the corresponding env variable.
   sed -E "s/define\('CIVICRM_UF', '([^']+)'\);/define('CIVICRM_UF', getenv('CIVICRM_UF') ?: '\1');/g" \
     -i /var/www/html/sites/default/civicrm.settings.php
@@ -30,7 +32,7 @@ cv flush >/dev/null 2>/dev/null || {
   # For headless tests these files need to exist.
   touch /var/www/html/sites/all/modules/civicrm/sql/test_data.mysql
   touch /var/www/html/sites/all/modules/civicrm/sql/test_data_second_domain.mysql
-}
+fi
 
 cd "$EXT_DIR"
 composer update --no-progress --prefer-dist --optimize-autoloader --no-dev
