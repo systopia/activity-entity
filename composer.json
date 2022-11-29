@@ -3,15 +3,17 @@
     "prefer-stable": true,
     "config": {
         "allow-plugins": {
-            "civicrm/composer-compile-plugin": true,
+            "civicrm/composer-compile-plugin": false,
             "civicrm/composer-downloads-plugin": true,
             "cweagans/composer-patches": true
         }
     },
+    "require": {
+        "webmozart/assert": "^1.11"
+    },
     "require-dev": {
         "civicrm/civicrm-core": "^5.45",
-        "civicrm/civicrm-packages": "^5.45",
-        "webmozart/assert": "^1.11"
+        "civicrm/civicrm-packages": "^5.45"
     },
     "scripts": {
         "post-install-or-update": [
@@ -57,8 +59,5 @@
             "@phpstan",
             "@phpunit"
         ]
-    },
-    "extra": {
-        "compile-whitelist": ["civicrm/civicrm-core", "civicrm/composer-compile-lib"]
     }
 }
