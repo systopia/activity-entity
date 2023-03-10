@@ -28,7 +28,7 @@ final class ActivityFixture {
    *
    * @phpstan-return array{id: int}&array<string, scalar|null>
    *
-   * @throws \API_Exception
+   * @throws \CRM_Core_Exception
    */
   public static function addFixture(array $values = []): array {
     return Activity::create()->setValues([

@@ -2,6 +2,13 @@ includes:
 	- phpstan.neon.dist
 
 parameters:
+	# Avoid error "Call to an undefined method CRM_Core_DAO::tableName()."
+	scanFiles:
+		- ci/vendor/civicrm/civicrm-packages/DB/DataObject.php
+	scanDirectories:
+		- ci/vendor/civicrm/civicrm-core/CRM/
+	bootstrapFiles:
+		- ci/vendor/autoload.php
 	# Because we test with different versions in CI we have unmatched errors
 	reportUnmatchedIgnoredErrors: false
 	ignoreErrors:
