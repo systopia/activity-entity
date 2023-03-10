@@ -62,7 +62,7 @@ final class DisconnectEntityAction extends AbstractAction {
   /**
    * @inheritDoc
    *
-   * @throws \API_Exception
+   * @throws \CRM_Core_Exception
    * @throws \Civi\API\Exception\UnauthorizedException
    */
   public function _run(Result $result): void {

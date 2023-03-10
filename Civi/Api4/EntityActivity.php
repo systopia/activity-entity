@@ -40,7 +40,7 @@ final class EntityActivity extends Generic\DAOEntity {
   /**
    * Connect an activity with an entity.
    *
-   * @throws \API_Exception
+   * @throws \CRM_Core_Exception
    */
   public static function connect(bool $checkPermissions = TRUE): ConnectAction {
     return (new ConnectAction(static::create()))
@@ -50,7 +50,7 @@ final class EntityActivity extends Generic\DAOEntity {
   /**
    * Disconnect an entity from an activity.
    *
-   * @throws \API_Exception
+   * @throws \CRM_Core_Exception
    */
   public static function disconnect(bool $checkPermissions = TRUE): DisconnectAction {
     return (new DisconnectAction(static::delete()))
@@ -60,7 +60,7 @@ final class EntityActivity extends Generic\DAOEntity {
   /**
    * Disconnect all entity connections with an activity.
    *
-   * @throws \API_Exception
+   * @throws \CRM_Core_Exception
    */
   public static function disconnectActivity(bool $checkPermissions = TRUE): DisconnectActivityAction {
     return (new DisconnectActivityAction(static::delete()))
@@ -70,7 +70,7 @@ final class EntityActivity extends Generic\DAOEntity {
   /**
    * Disconnect all activity connections with an entity.
    *
-   * @throws \API_Exception
+   * @throws \CRM_Core_Exception
    */
   public static function disconnectEntity(bool $checkPermissions = TRUE): DisconnectEntityAction {
     return (new DisconnectEntityAction(static::delete()))
