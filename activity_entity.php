@@ -1,14 +1,28 @@
 <?php
 declare(strict_types = 1);
 
+// phpcs:disable PSR1.Files.SideEffects
 require_once 'activity_entity.civix.php';
+// phpcs:enable
+
+function _activity_entity_composer_autoload(): void {
+  if (file_exists(__DIR__ . '/vendor/autoload.php')) {
+    $classLoader = require_once __DIR__ . '/vendor/autoload.php';
+    if ($classLoader instanceof \Composer\Autoload\ClassLoader) {
+      // Re-register class loader to append it. (It's automatically prepended.)
+      $classLoader->unregister();
+      $classLoader->register();
+    }
+  }
+}
 
 /**
  * Implements hook_civicrm_config().
  *
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_config/
  */
-function activity_entity_civicrm_config(&$config) {
+function activity_entity_civicrm_config(&$config): void {
+  _activity_entity_composer_autoload();
   _activity_entity_civix_civicrm_config($config);
 }
 
