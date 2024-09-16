@@ -1,7 +1,13 @@
 name: PHPUnit
 
 on:
-  push: ~
+  pull_request:
+    paths:
+      - '**.php'
+      - composer.json
+      - tools/phpunit/composer.json
+      - phpunit.xml.dist
+      - tests/docker-prepare.sh
 
 env:
   # On github CI machine creating the "/vendor" volume fails otherwise with: read-only file system: unknown
@@ -24,8 +30,8 @@ jobs:
     - name: Start containers
       run: docker compose -f tests/docker-compose.yml up -d
     - name: Prepare environment
-      run: docker compose -f tests/docker-compose.yml exec civicrm sites/default/files/civicrm/ext/activity_entity/tests/docker-prepare.sh
+      run: docker compose -f tests/docker-compose.yml exec civicrm sites/default/files/civicrm/ext/activity-entity/tests/docker-prepare.sh
     - name: Run PHPUnit
-      run: docker compose -f tests/docker-compose.yml exec civicrm sites/default/files/civicrm/ext/activity_entity/tests/docker-phpunit.sh
+      run: docker compose -f tests/docker-compose.yml exec civicrm sites/default/files/civicrm/ext/activity-entity/tests/docker-phpunit.sh
     - name: Remove containers
       run: docker compose -f tests/docker-compose.yml down -v

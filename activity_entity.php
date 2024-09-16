@@ -21,7 +21,7 @@ function _activity_entity_composer_autoload(): void {
  *
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_config/
  */
-function activity_entity_civicrm_config(&$config): void {
+function activity_entity_civicrm_config(\CRM_Core_Config $config): void {
   _activity_entity_composer_autoload();
   _activity_entity_civix_civicrm_config($config);
 }
