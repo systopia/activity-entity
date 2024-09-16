@@ -8,12 +8,12 @@
          bootstrap="tests/phpunit/bootstrap.php">
 
   <php>
-    <ini name="error_reporting" value="-1" />
+    <ini name="error_reporting" value="-1"/>
     <env name="SYMFONY_DEPRECATIONS_HELPER" value="max[direct]=0&amp;baselineFile=./tests/ignored-deprecations.json"/>
   </php>
 
   <testsuites>
-    <testsuite name="Extension Test Suite">
+    <testsuite name="activity-entity Test Suite">
       <directory>./tests/phpunit</directory>
     </testsuite>
   </testsuites>
@@ -23,7 +23,6 @@
       <directory suffix=".php">Civi</directory>
       <exclude>
         <directory>CRM/*/DAO</directory>
-        <directory suffix="Base.php">CRM/*/Upgrader</directory>
       </exclude>
     </whitelist>
   </filter>
@@ -32,4 +31,5 @@
       <arguments/>
     </listener>
   </listeners>
+
 </phpunit>
