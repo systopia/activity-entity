@@ -1,5 +1,6 @@
 {
     "name": "systopia/activity-entity",
+    "description": "Connect activities with other entities",
     "type": "civicrm-ext",
     "license": "AGPL-3.0-or-later",
     "authors": [
@@ -13,9 +14,12 @@
     "prefer-stable": true,
     "config": {
         "prepend-autoloader": false,
-        "sort-packages": true
+        "sort-packages": true,
+        "platform": {
+        }
     },
     "require": {
+        "php": "^8.1",
         "webmozart/assert": "^1.11"
     },
     "scripts": {
@@ -40,7 +44,7 @@
             "@php tools/phpcs/vendor/bin/phpcbf"
         ],
         "phpstan": [
-            "@php tools/phpstan/vendor/bin/phpstan"
+            "@php tools/phpstan/vendor/bin/phpstan -v"
         ],
         "phpunit": [
             "@php tools/phpunit/vendor/bin/simple-phpunit --coverage-text"

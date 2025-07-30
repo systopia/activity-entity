@@ -20,8 +20,8 @@ The extension is licensed under [AGPL-3.0](LICENSE.txt).
 
 ## Requirements
 
-* PHP v7.4+
-* CiviCRM 5
+* PHP v8.1+
+* CiviCRM 5.55+
 
 ## Installation (Web UI)
 
