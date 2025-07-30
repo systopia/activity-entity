@@ -21,6 +21,9 @@ parameters:
 		- Civi\Core\Event\GenericHookEvent
 		- CRM_Core_Config
 		- CRM_Core_DAO
+	earlyTerminatingMethodCalls:
+		CRM_Queue_Runner:
+		  - runAllViaWeb
 	checkTooWideReturnTypesInProtectedAndPublicMethods: true
 	checkUninitializedProperties: true
 	checkMissingCallableSignature: true
@@ -38,7 +41,6 @@ parameters:
 
 		# Tests
 		- # Accessing results of API requests
-			message: "#^Offset '[^']+' does not exist on array[^\\|]+\\|null.$#"
+			identifier: offsetAccess.notFound
 			path: */tests/phpunit/Civi/**/*Test.php
-		- '#^Method Civi\\Fixtures\\[^\s]+Fixture::[^\s]+\(\) should return array{[^}]+} but returns array\|null.$#'
 	tmpDir: .phpstan

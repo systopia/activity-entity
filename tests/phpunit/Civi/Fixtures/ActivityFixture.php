@@ -31,10 +31,11 @@ final class ActivityFixture {
    * @throws \CRM_Core_Exception
    */
   public static function addFixture(array $values = []): array {
+    // @phpstan-ignore return.type
     return Activity::create()->setValues([
       'activity_type_id' => 1,
       'source_contact_id' => 1,
-    ] + $values)->execute()->first();
+    ] + $values)->execute()->single();
   }
 
 }

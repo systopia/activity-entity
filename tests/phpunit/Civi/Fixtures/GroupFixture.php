@@ -31,9 +31,10 @@ final class GroupFixture {
    * @throws \CRM_Core_Exception
    */
   public static function addFixture(array $values = []): array {
+    // @phpstan-ignore return.type
     return Group::create()->setValues([
       'title' => 'Test',
-    ] + $values)->execute()->first();
+    ] + $values)->execute()->single();
   }
 
 }
