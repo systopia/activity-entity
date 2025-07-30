@@ -1,0 +1,60 @@
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "Entity Activities"
+msgstr ""
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "Entity Activity"
+msgstr ""
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "Activity Entity ID"
+msgstr ""
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "Unique ActivityEntity ID"
+msgstr ""
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "Activity ID"
+msgstr ""
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "FK to Activity"
+msgstr ""
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "Activity"
+msgstr ""
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "Entity Table"
+msgstr ""
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "Physical table name for entity being joined"
+msgstr ""
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "Entity table"
+msgstr ""
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "Entity ID"
+msgstr ""
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "FK to entity table specified in entity_table column."
+msgstr ""
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "Connection Type"
+msgstr ""
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "Determines the type of connection"
+msgstr ""
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "Connection type"
+msgstr ""
+
