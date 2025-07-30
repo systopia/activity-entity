@@ -1,0 +1,72 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "Entity Activities"
+msgstr "Entity Activities"
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "Entity Activity"
+msgstr "Entity Activity"
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "Activity Entity ID"
+msgstr "Activity Entity ID"
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "Unique ActivityEntity ID"
+msgstr "Eindeutige ActivityEntity-ID"
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "Activity ID"
+msgstr "Aktivitäts-ID"
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "FK to Activity"
+msgstr "Fremdschlüssel zur Aktivität"
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "Activity"
+msgstr "Aktivität"
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "Entity Table"
+msgstr "Entitätstabelle"
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "Physical table name for entity being joined"
+msgstr "Name der physischen Tabelle der gejointen Entität"
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "Entity table"
+msgstr "Entitätstabelle"
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "Entity ID"
+msgstr "Entitäts-ID"
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "FK to entity table specified in entity_table column."
+msgstr "Fremdschlüssel zur Entitätstabelle aus Spalte entity_table."
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "Connection Type"
+msgstr "Verbindungstyp"
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "Determines the type of connection"
+msgstr "Bestimmt den Typ der Verbindung"
+
+#: CRM/ActivityEntity/DAO/EntityActivity.php
+msgid "Connection type"
+msgstr "Verbindungstyp"
